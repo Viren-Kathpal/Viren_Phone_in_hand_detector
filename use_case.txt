@@ -1,0 +1,34 @@
+USE CASE: Phone In Hand Detection
+
+Overview:
+----------
+This application is designed to identify instances where individuals are holding a phone in their hands, using computer vision and YOLOv8. It is ideal for environments where phone usage needs to be monitored or restricted — such as offices, exam centers, classrooms, or industrial areas.
+
+Scenarios:
+----------
+1. Office Surveillance:
+   - Detect unauthorized mobile phone usage during working hours.
+   - Support HR or Admin staff with visual records.
+
+2. Exam Monitoring:
+   - Check if students are using phones during an exam from CCTV footage.
+   - Works for both live frames and recorded video/image review.
+
+3. Industrial Safety:
+   - Alert management when workers are using phones in hazardous areas.
+
+4. Productivity Analysis:
+   - Hourly logs can be integrated for behavior trends or employee monitoring.
+
+Technology Stack:
+-----------------
+- YOLOv8 (Pretrained model - no training required)
+- Streamlit for Web UI
+- OpenCV for processing
+- PyTorch backend
+
+Outputs:
+--------
+- Annotated image or video with bounding boxes.
+- Label at top indicating number of phones detected.
+- Outputs saved in organized folders.

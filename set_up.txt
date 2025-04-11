@@ -1,0 +1,42 @@
+SETUP INSTRUCTIONS
+
+
+1. Setup Python Environment:
+----------------------------
+# Create virtual environment
+python -m venv venv
+
+# Activate it
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+2. Install Required Packages:
+-----------------------------
+pip install -r requirements.txt
+
+3. Run the Streamlit App:
+--------------------------
+streamlit run app.py
+
+4. Add Inputs through Streamlit:
+--------------
+
+> uploads
+
+
+5. Output Results:
+------------------
+Processed files will be saved in:
+> output  (for annotated images)
+
+
+6. Exit:
+--------
+To stop the app, press Ctrl+C in the terminal.
+
+Optional:
+---------
+To deactivate virtual environment:
+deactivate
