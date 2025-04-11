@@ -23,7 +23,7 @@ This project allows you to detect if a person is using a phone by analyzing imag
 
 > In this image, the model detected a phone **in hand**. A green box is drawn around it.
 
-![Phone in hand](output/3.jpg)
+![Phone in hand](output/4.jpg)
 
 ---
 
