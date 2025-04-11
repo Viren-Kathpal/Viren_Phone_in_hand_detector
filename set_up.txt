@@ -16,23 +16,43 @@ source venv/bin/activate
 -----------------------------
 pip install -r requirements.txt
 
-3. Run the Streamlit App:
+3. Download YOLOv8 Model (.pt file):
+------------------------------------
+
+Just run the Streamlit app, and the YOLOv8 model will automatically be downloaded if not already present.
+
+- By default, the app uses yolov8m.pt for better accuracy.
+- If you want to use a different YOLOv8 model (e.g., yolov8n.pt, yolov8s.pt, yolov8x.pt, etc.):
+
+Update the model name in both:
+- app.py:  
+  python
+  detector = PhoneDetector("yolov8m.pt")  # Change model name here if needed
+  
+- detector.py (inside the __init__ of PhoneDetector):  
+  python
+  self.model = YOLO(model_path)
+  
+
+Just make sure the .pt file exists or can be downloaded automatically by Ultralytics.
+
+4. Run the Streamlit App:
 --------------------------
 streamlit run app.py
 
-4. Add Inputs through Streamlit:
+5. Add Inputs through Streamlit:
 --------------
 
 > uploads
 
 
-5. Output Results:
+6. Output Results:
 ------------------
 Processed files will be saved in:
 > output  (for annotated images)
 
 
-6. Exit:
+7. Exit:
 --------
 To stop the app, press Ctrl+C in the terminal.
 
